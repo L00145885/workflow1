@@ -22,6 +22,7 @@ jobs:
       run: date
   job4:
     name: job4
+    needs: [job1, job2]
     runs-on: unbuntu-latest
     steps:
     - name: step4
