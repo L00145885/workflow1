@@ -8,11 +8,13 @@ jobs:
     steps:
     - name: step1
       run: echo "Hello from job 1"
+  job2:
     name: job2
     runs-on: windows-latest
     steps:
     - name: step2
       run: echo "Hello from job 2"
+  job3:
     name: job3
     runs-on: ubuntu-latest
     steps:
