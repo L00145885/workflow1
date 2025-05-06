@@ -12,3 +12,13 @@ jobs:
         date
         pwd
         ls -l
+  job2:
+    name: job2
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup python
+      uses: actions/setup-python@v4
+        with:
+          python-version: 3.10
+    - name: check version of python
+      run: python --version
