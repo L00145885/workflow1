@@ -21,3 +21,8 @@ jobs:
       run: |
         cd ModelCleaning
         python Cleandata.py
+    - name: train_test
+      run: |
+        pip install scikit-learn joblib
+        cd ModelCleaning
+        python train_test_dataset.py
